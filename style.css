@@ -55,13 +55,13 @@ footer {
 #login:not(#newfile) {
   background-color: #006600;
   position: relative;
-  right: -1260px;
+  right: -1060px;
 }
 
 #signup:not(#newfile) {
   background-color: #660000;
   position: relative;
-  right: -1260px;
+  right: -1060px;
 }
 
 div.bigrect {

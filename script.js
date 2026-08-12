@@ -28,9 +28,13 @@ if (windowbutton) {
   windownew.classList.add("window", "hidden");
   document.body.appendChild(windownew);
 
-  windowbutton.addEventListener("click", () => {
+  windowbutton.addEventListener("click", () => { // click event listener is important
+    if(tries < 5) {
     tries++
-    alert("Unable to make a project, tried " + tries + " times.");
+    alert("Unable to make a project, tried " + tries + " times."); // before you reach its limit
+    } else {
+      alert("Chill cowboy!"); // after you reach its limit
+    }
     console.error("game-creator, window not found, tries: " + tries);
   });
 }

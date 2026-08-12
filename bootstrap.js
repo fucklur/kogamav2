@@ -6,7 +6,7 @@ const gameBootstrapper = document.getElementById("playbtn");
 if (gameBootstrapper) {
   gameBootstrapper.addEventListener("click", () => {
       const newSpan = document.createElement("span");
-      while (pload < 100) {
+      while (pLoad < 100) {
 
       pLoad++
       newSpan.classList.add("loadGame");

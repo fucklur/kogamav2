@@ -1,13 +1,37 @@
-const windowbutton = document.getElementById("newfile");
-const windownew = document.createElement("div");
-windownew.classList.add("window");
-document.body.appendChild(windownew);
+const slideoutBtn = document.getElementById("slideoutBtn");
+const closeSlideout = document.getElementById("closeSlideout");
+const slideoutPanel = document.getElementById("slideoutPanel");
+const slideoutOverlay = document.getElementById("slideoutOverlay");
 
-windowbutton.addEventListener("click", () => {
-  if (windownew.classList.contains("hidden")) {
-    windownew.classList.remove("hidden");
-    windownew.innerText = "Unable to make a project, try again later!";
-  } else {
-    windownew.classList.add("hidden");
+if (slideoutBtn && closeSlideout && slideoutPanel && slideoutOverlay) {
+  function openMenu() {
+    slideoutPanel.classList.add("active");
+    slideoutOverlay.classList.add("active");
   }
-});
+
+  function closeMenu() {
+    slideoutPanel.classList.remove("active");
+    slideoutOverlay.classList.remove("active");
+  }
+
+  slideoutBtn.addEventListener("click", openMenu);
+  closeSlideout.addEventListener("click", closeMenu);
+  slideoutOverlay.addEventListener("click", closeMenu);
+}
+
+const windowbutton = document.getElementById("newfile");
+
+if (windowbutton) {
+  const windownew = document.createElement("div");
+  windownew.classList.add("window", "hidden");
+  document.body.appendChild(windownew);
+
+  windowbutton.addEventListener("click", () => {
+    if (windownew.classList.contains("hidden")) {
+      windownew.innerText = "Unable to make a project, try again later!";
+      windownew.classList.remove("hidden");
+    } else {
+      windownew.classList.add("hidden");
+    }
+  });
+}

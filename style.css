@@ -225,3 +225,11 @@ footer {
   top: 25px;
   scale: 1;
 }
+
+#playbtn {
+  border-radius: 16px;
+  color: black;
+  background-color: #00bb00;
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;

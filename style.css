@@ -240,6 +240,7 @@ footer {
   display: block;
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s;
+  text-decoration: none;
 }
 
 #playbtn:hover {

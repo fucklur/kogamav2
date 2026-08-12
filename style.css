@@ -13,7 +13,7 @@ body {
   flex-direction: column;
 }
 
-h1 {
+h1, h2 {
   color: white;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -223,5 +223,5 @@ footer {
   border-radius: 48px;
   position: relative;
   top: 25px;
-  scale: 1.5;
+  scale: 1;
 }

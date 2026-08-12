@@ -30,7 +30,7 @@ if (windowbutton) {
 
   windowbutton.addEventListener("click", () => {
     tries++
-    alert("Unable to make a project, tried " + tries + " times.);
+    alert("Unable to make a project, tried " + tries + " times.");
     console.error("game-creator, window not found, tries: " + tries);
   });
 }

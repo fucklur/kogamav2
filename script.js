@@ -28,5 +28,6 @@ if (windowbutton) {
 
   windowbutton.addEventListener("click", () => {
     alert("Unable to make a project");
+    console.error("game-creator, window not found:);
   });
 }

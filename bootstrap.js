@@ -1,12 +1,18 @@
 let tris = 0;
+let pLoad = 0;
 
 const gameBootstrapper = document.getElementById("playbtn");
 
-gameBootstrapper.addEventListener("click", () => {
-  if (tris < 5) {
-    tris++
-    alert("Failet to load game. You tried " + tris + " times!");
-  } else {
-    alert("bradar chill");
-  }
-});
+if (gameBootstrapper) {
+  gameBootstrapper.addEventListener("click", () => {
+      const newSpan = document.createElement("span");
+      while (pload < 100) {
+
+      pLoad++
+      newSpan.classList.add("loadGame");
+      newSpan.innerText = "Loading game " + pLoad + "%";
+
+      gameBootstrapper.replaceWith(newSpan);
+    }
+  });
+}

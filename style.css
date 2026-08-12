@@ -238,4 +238,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  cursor: pointer;
+  transition: color 0.2s background-color 0.2s;
+}
+
+#playbtn:hover {
+  color: white;
+  background-color: #005500;
 }

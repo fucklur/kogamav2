@@ -1,3 +1,5 @@
+let tries = 0;
+
 const slideoutBtn = document.getElementById("slideoutBtn");
 const closeSlideout = document.getElementById("closeSlideout");
 const slideoutPanel = document.getElementById("slideoutPanel");
@@ -27,6 +29,7 @@ if (windowbutton) {
   document.body.appendChild(windownew);
 
   windowbutton.addEventListener("click", () => {
+    tries++
     alert("Unable to make a project");
     console.error("game-creator, window not found");
   });

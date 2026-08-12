@@ -241,6 +241,8 @@ footer {
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s;
   text-decoration: none;
+  color: inherit;
+  background-color: inherit;
 }
 
 #playbtn:hover {

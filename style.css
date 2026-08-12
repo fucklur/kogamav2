@@ -232,4 +232,10 @@ footer {
   background-color: #00bb00;
   font-size: 32px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  border: none;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

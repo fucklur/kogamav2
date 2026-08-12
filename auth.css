@@ -40,6 +40,8 @@ h2 {
   border-radius: 8px;
   border: none;
   transform: background 0.3s;
+  position: relative;
+  top: 10px;
 }
 
 #loginbtn:hover {

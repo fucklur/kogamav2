@@ -217,6 +217,7 @@ footer {
 }
 
 .game-site {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 48px;

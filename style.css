@@ -239,7 +239,7 @@ footer {
   margin-right: auto;
   display: block;
   cursor: pointer;
-  transition: color 0.2s background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 #playbtn:hover {

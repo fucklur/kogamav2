@@ -1,0 +1,7 @@
+body {
+  background-image: linear-gradient(to bottom, #00bbff, #0088ff);
+  font-family: 'Open Sans', sans-serif;
+
+h1, h2 {
+  color: white;
+}

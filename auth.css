@@ -1,7 +1,8 @@
 body {
   background-image: linear-gradient(to bottom, #00bbff, #0088ff);
-  font-family: 'Open Sans', sans-serif;
+  height: 100vh
 
 h1, h2 {
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }

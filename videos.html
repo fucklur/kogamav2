@@ -1,17 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>KoGaMa v2 Videos - Tutorials, features and community creations!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="bigrect"><a href="/kogamav2/index"><button>Play</button></a> <a href="build"><button>Build</button></a> <a href="videos"><button>Videos</button></a> <a href="/kogarevival"><button>KoGaRevival</button></a> <a href="login"><button id="login">Login</button></a> <a href="signup"><button id="signup">Signup</button></a></div>
-  </body>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>KoGaMa v2 Videos - Tutorials, features and community creations!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="bigrect">
+    <div class="nav-left">
+      <button id="slideoutBtn" class="slideout-toggle">☰</button>
+      <a href="/kogamav2/index" class="nav-btn">Play</a>
+      <a href="build" class="nav-btn">Build</a>
+      <a href="videos" class="nav-btn">Videos</a>
+      <a href="/kogarevival" class="nav-btn">KoGaRevival</a>
+    </div>
+    <div class="nav-right">
+      <a href="login" class="nav-btn" id="login">Login</a>
+      <a href="signup" class="nav-btn" id="signup">Signup</a>
+    </div>
+  </div>
+
+  <aside id="slideoutPanel" class="slideout-panel">
+    <div class="slideout-header">
+      <h2>Info</h2>
+      <button id="closeSlideout" class="close-btn">&times;</button>
+    </div>
+    <div class="slideout-content">
+      <a href="/about" class="info-btn">About Us</a>
+      <a href="/rules" class="info-btn">Rules</a>
+      <a href="/faq" class="info-btn">FAQ</a>
+      <a href="/discord" class="info-btn">Discord</a>
+    </div>
+  </aside>
+
+  <div id="slideoutOverlay" class="slideout-overlay"></div>
+
   <h1>No videos were published.</h1>
+
   <footer>
     <div class="rectangle"></div>
     <span class="footer-text">&copy; 2011–2026 KoGaMa. <strong>All rights reserved.</strong></span>
-</footer>
+  </footer>
+
+</body>
 </html>

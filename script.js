@@ -27,11 +27,6 @@ if (windowbutton) {
   document.body.appendChild(windownew);
 
   windowbutton.addEventListener("click", () => {
-    if (windownew.classList.contains("hidden")) {
-      windownew.innerText = "Unable to make a project, try again later!";
-      windownew.classList.remove("hidden");
-    } else {
-      windownew.classList.add("hidden");
-    }
+    alert("Unable to make a project");
   });
 }

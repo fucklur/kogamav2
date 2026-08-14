@@ -24,16 +24,16 @@ if (slideoutBtn && closeSlideout && slideoutPanel && slideoutOverlay) {
 const windowbutton = document.getElementById("newfile");
 
 if (windowbutton) {
-  const windownew = document.createElement("div");
+  const windownew = document.getElementById("cannot");
   windownew.classList.add("window", "hidden");
   document.body.appendChild(windownew);
 
   windowbutton.addEventListener("click", () => { // click event listener is important
     if(tries < 5) {
     tries++
-    alert("Unable to make a project, tried " + tries + " times."); // before you reach its limit
+    windownew.innerHTML = "Unable to make a project, tried " + tries + " times."; // before you reach its limit
     } else {
-      alert("Chill cowboy!"); // after you reach its limit
+      windownew.innerHTML = "Chill cowboy!"; // after you reach its limit
     }
     console.error("game-creator, window not found, tries: " + tries);
   });

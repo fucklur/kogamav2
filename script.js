@@ -25,7 +25,6 @@ const windowbutton = document.getElementById("newfile");
 
 if (windowbutton) {
   const windownew = document.getElementById("cannot");
-  windownew.classList.add("window", "hidden");
   document.body.appendChild(windownew);
 
   windowbutton.addEventListener("click", () => { // click event listener is important
